@@ -1,0 +1,86 @@
+/* Base styles */
+.details {
+    text-align: center;
+    width: 100%;
+    font-family: 'Berkeley', sans-serif;
+}
+
+.main {
+    width: 100%;
+    margin-bottom: 20px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/img4.jpg');
+    background-size: cover;
+    height: 150px;
+    background-position: center;
+    padding: 25px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+    padding: 0 20px 0 20px;
+}
+
+.inputField input,
+.inputField textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: border-color 0.3s;
+    margin-bottom: 20px;
+}
+
+.inputField input:focus,
+.inputField textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 20px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Medium screens and up */
+@media (min-width: 768px) {
+    .inputField input,
+    .inputField textarea {
+        max-width: 600px;
+    }
+}
+
+/* Large screens and up */
+@media (min-width: 1024px) {
+    .main {
+        height: 300px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .inputField input,
+    .inputField textarea {
+        max-width: 700px;
+    }
+}
