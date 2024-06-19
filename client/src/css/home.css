@@ -18,7 +18,7 @@
     padding: 20px;
 }
 
-.templates h1{
+.templates h1 {
     margin-bottom: 20px;
 }
 
@@ -44,7 +44,7 @@
 
 /* Popup */
 .images img::after {
-    content: attr(alt); 
+    content: attr(alt);
     position: absolute;
     bottom: 10px;
     left: 50%;
@@ -63,7 +63,7 @@
     opacity: 1;
 }
 
-.images a{
+.images a {
     text-align: left;
     text-decoration: none;
 }
@@ -79,18 +79,33 @@
 @media (min-width: 1024px) {
     .main {
         height: 300px;
-        background-size: cover;
+        background-size: 60%;
         background-position: center;
+        padding-top: 100px;
     }
 
-    .templates{
-        max-width: 100%;
+    .templates {
+        width: 100%
     }
 
     .images {
         justify-content: center;
         flex-wrap: nowrap;
+        margin-top: 20px;
+    }
+
+    .images img {
+  
         width: 300px;
-        max-width: 300px;
+        height: auto;
+        cursor: pointer;
+        transition: transform 0.2s;
+        border-radius: 5px;
+        position: relative;
+    }
+
+    .images a,
+    .images p {
+        display: none;
     }
 }

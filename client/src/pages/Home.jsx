@@ -25,13 +25,13 @@ function Home({ setSelectedTemplate }) {
         <h1>Select Your Template</h1>
         <div className="images">
           <img src={img1} alt='Image 1' onClick={() => handleTemplateSelect(img1)} />
-          <a href='https://www.freepik.com/' target="_blank" rel="noopener noreferrer">freepik.com</a>
+          <p>Resource: </p><a href='https://www.freepik.com/' target="_blank" rel="noopener noreferrer">freepik.com</a>
           <img src={img2} alt='Image 2' onClick={() => handleTemplateSelect(img2)} />
-          <a href='https://www.freepik.com/' target="_blank" rel="noopener noreferrer">freepik.com</a>
+          <p>Resource: </p> <a href='https://www.freepik.com/' target="_blank" rel="noopener noreferrer">freepik.com</a>
           <img src={img3} alt='Image 3' onClick={() => handleTemplateSelect(img3)} />
-          <a href='https://www.freepik.com/' target="_blank" rel="noopener noreferrer">freepik.com</a>
+          <p>Resource: </p> <a href='https://www.freepik.com/' target="_blank" rel="noopener noreferrer">freepik.com</a>
           <img src={img4} alt='Image 4' onClick={() => handleTemplateSelect(img4)} />
-          <a href='https://www.google.com/imgres?q=poson%20poya%20gif&imgurl=http%3A%2F%2Fwww.defence.lk%2Fassets%2Fimg%2FPoson_tag_EN.gif&imgrefurl=https%3A%2F%2Fwww.defence.lk%2FArticle%2Fview_article%2F4641&docid=a2vUk5wQvq2cRM&tbnid=cJrNOPZ_8D264M&vet=12ahUKEwjOjOemheeGAxWW3TgGHT_-DVAQM3oECFQQAA..i&w=900&h=600&hcb=2&ved=2ahUKEwjOjOemheeGAxWW3TgGHT_-DVAQM3oECFQQAA' target="_blank" rel="noopener noreferrer">poson poya.gif</a>
+          <p>Resource: </p> <a href='https://www.google.com/imgres?q=poson%20poya%20gif&imgurl=http%3A%2F%2Fwww.defence.lk%2Fassets%2Fimg%2FPoson_tag_EN.gif&imgrefurl=https%3A%2F%2Fwww.defence.lk%2FArticle%2Fview_article%2F4641&docid=a2vUk5wQvq2cRM&tbnid=cJrNOPZ_8D264M&vet=12ahUKEwjOjOemheeGAxWW3TgGHT_-DVAQM3oECFQQAA..i&w=900&h=600&hcb=2&ved=2ahUKEwjOjOemheeGAxWW3TgGHT_-DVAQM3oECFQQAA' target="_blank" rel="noopener noreferrer">poson poya.gif</a>
         </div>
       </div>
     </div>

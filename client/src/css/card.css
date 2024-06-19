@@ -2,7 +2,7 @@
     display: none;
 }
 
-.card {
+.card1 {
     position: relative;
     background-size: cover;
     display: flex;
@@ -14,7 +14,7 @@
     font-family: 'Berkeley', sans-serif;
 }
 
-.main {
+.cmain {
     margin-bottom: 20px;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/bg.jpg');
     background-size: cover;
@@ -99,14 +99,17 @@
     justify-content: center;
     gap: 10px;
     margin-top: 20px;
-  }
-  
-  .copied-notification {
+}
+
+.copied-notification {
     color: green;
     font-size: 14px;
     margin-left: 10px;
-  }
-  
+}
+
+.link{
+    color: blue;
+}
 
 @media (min-width: 768px) {
     .content {
@@ -125,5 +128,35 @@
     .details {
         text-align: left;
         margin-left: 20px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .cmain{
+        width: 100%;
+        height: 250px;
+        background-size: 55%;
+        padding-top: 100px;
+    }
+
+    .content{
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .template img {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        border-radius: 5px;
+    }
+
+    .download-content {
+        background: url('../images/cardBg.png');
+        background-size: cover;
+        background-position: center;
     }
 }

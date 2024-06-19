@@ -16,10 +16,10 @@ function Details({ setDetails }) {
   };
 
   return (
-    <div className='details'>
-      <div className='main'>
+    <div className='details1'>
+      <div className='dmain'>
         <h2>
-          Share Poson Cards with your loved ones
+          Fill poson card's details
         </h2>
       </div>
       <form onSubmit={handleSubmit}>

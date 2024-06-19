@@ -1,13 +1,11 @@
 import React, { useRef } from 'react';
 import '../css/card.css';
-import { Link } from 'react-router-dom';
 import html2canvas from 'html2canvas';
 
 function Card({ selectedTemplate, details }) {
   const contentRef = useRef(null);
 
   const downloadImage = () => {
-    // Show background content before capturing
     contentRef.current.classList.add('download-content');
 
     html2canvas(contentRef.current, {
@@ -16,19 +14,18 @@ function Card({ selectedTemplate, details }) {
     }).then(canvas => {
       const link = document.createElement('a');
       link.href = canvas.toDataURL();
-      link.download = `Poson Card from ${details.from} to ${details.to}`;
+      link.download = `Poson Card from ${details.from} to ${details.to}.png`;
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
 
-      // Hide background content after capturing
       contentRef.current.classList.remove('download-content');
     });
   };
 
   return (
-    <div className='card'>
-      <div className='main'>
+    <div className='card1'>
+      <div className='cmain'>
         <h2>
           Share Poson Cards with your loved ones
         </h2>
@@ -42,6 +39,7 @@ function Card({ selectedTemplate, details }) {
           <p><strong>To:</strong> {details.to}</p>
           <p><strong>Message:</strong> {details.message}</p>
         </div>
+        <small className='link'>poson-card.vercel.app</small>
       </div>
       <div className='downloadImageBtn'>
         <button onClick={downloadImage}>Download</button>
